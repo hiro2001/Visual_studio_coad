@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main2.css" />
+        <title>test用自己紹介</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+        <style>
+        .swiper-container {
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div align = "center">
+            <script>
+                 function ChangeDisp(mode)
+                 {
+                   // 表示モードの場合は、ID：messageの要素を表示状態とする
+                   if (mode =="disp")
+                   {
+                     document.getElementById("message1").style.display="block";
+                     document.getElementById("message2").style.display="none";
+                   }
+                   // 非表示モードの場合は、ID：messageの要素を非表示状態とする
+                   else
+                   {
+                     document.getElementById("message2").style.display="block";
+                     document.getElementById("message1").style.display="none";
+                   }
+                 }
+            </script>
+            <form>
+                <input type="button" value="日本語" onclick="ChangeDisp('disp')">
+                <input type="button" value="English" onclick="ChangeDisp('hide')">
+                <div id="message1">
+                    <h1>自己紹介</h1>
+                    <p>名前　：　松田浩幸</p>
+                    <p>所属　：　千葉工業大学先進工学部未来ロボティクス学科</p>
+                </div>
+                <div id="message2">
+                    <h1>self-introduction</h1>
+                    <p>name　：　Hiroyuki Matsuda</p>
+                    <p>Affiliation　：　Chiba Institute of Technology</p>
+                </div>
+            </form>
+            <h3>SNS URL</h3>
+            <p>
+            <a href = "https://www.instagram.com/takocyu_mahiro/">Instagram</a>
+            </p>
+            <p>
+            <a href = "https://twitter.com/takocyuikasu">Twitter</a>
+            </p>
+            <p>
+            <a href = "https://www.youtube.com/channel/UClZrII1MaX0b5r4WfmHdfLQ">Youtube</a>
+            </p>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="png2/1.jpg" width="480" height="360" alt=""></div>
+            <div class="swiper-slide"><img src="png2/2.jpg" width="360" height="490" alt=""></div>
+            <div class="swiper-slide"><img src="png2/3.jpg" width="480" height="360" alt=""></div>
+            <div class="swiper-slide"><img src="png2/4.jpg" width="360" height="490" alt=""></div>
+            <div class="swiper-slide"><img src="png2/5.jpg" width="480" height="360" alt=""></div>
+            <div class="swiper-slide"><img src="png2/6.jpg" width="360" height="480" alt=""></div>
+            <div class="swiper-slide"><img src="png2/7.jpg" width="480" height="360" alt=""></div>
+            <div class="swiper-slide"><img src="png2/8.jpg" width="360" height="480" alt=""></div>
+            <div class="swiper-slide"><img src="png2/9.jpg" width="360" height="480" alt=""></div>
+            <div class="swiper-slide"><img src="png2/10.jpg" width="480" height="360" alt=""></div>
+            <div class="swiper-slide"><img src="png2/11.jpg" width="360" height="480" alt=""></div>
+            <div class="swiper-slide"><img src="png2/12.jpg" width="480" height="360" alt=""></div>
+            <div class="swiper-slide"><img src="png2/13.jpg" width="480" height="360" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+             effect: "slide",
+            loop: true,
+            autoplay: 5000,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            })
+        </script>
+
+
+    </body>
+</html>
