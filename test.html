@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <title>test</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+        <style>
+        .swiper-container {
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <a href="https://github.com/hiro2001">開発者のGitHubのURL</a>
+        <h1>見出し１の説明</h1>
+        <h2>見出し２の説明</h2>
+        <h3>見出し３の説明</h3>
+        <h4>見出し４の説明</h4>
+        <h5>見出し５の説明</h5>
+        <h6>見出し６の説明</h6>
+        <div align="center">
+            <img src="./sample.png" width="400" height="350" alt="test">
+        </div>
+        <p>段落１のテキストです。段落１のテキストです。</p>
+        <p>段落２のテキストです。</p>
+        <table border="1">
+            <tr>
+                <th>名前</th>
+                <th>年齢</th>
+            </tr>
+            <tr>
+              <td>侍 太郎</td>
+              <td>27</td>
+            </tr>
+            <tr>
+                <td>侍 花子</td>
+                <td>25</td>
+            </tr>
+        </table>
+        <ol>
+            <li>リスト１</li>
+            <li>リスト２</li>
+            <li>リスト３</li>
+            <li>リスト４</li>
+        </ol>
+        <ul>
+            <li>リスト１</li>
+            <li>リスト２</li>
+            <li>リスト３</li>
+            <li>リスト４</li>
+        </ul>
+        <br />
+        <script>
+             function Change(mode)
+             {
+               // 表示モードの場合は、ID：messageの要素を表示状態とする
+                if (mode =="farst"){
+                    document.getElementById("message1").style.display="block";
+                    document.getElementById("message2").style.display="none";
+                    document.getElementById("message3").style.display="none";
+                }
+                // 非表示モードの場合は、ID：messageの要素を非表示状態とする
+                else if(mode == "second"){
+                    document.getElementById("message2").style.display="block";
+                    document.getElementById("message1").style.display="none";
+                    document.getElementById("message3").style.display="none";
+                }
+                else{
+                    document.getElementById("message3").style.display="block";
+                    document.getElementById("message1").style.display="none";
+                    document.getElementById("message2").style.display="none";
+                }
+             }
+        </script>
+        <form>
+            <div align="center">
+                <input type="button" class="btn" id="blue_btn" value="ボタン1"  onclick="Change('farst')"/>
+                <input type="button" class="btn" id="pink_btn" value="ボタン2" onclick="Change('second')"/>
+                <input type="button" class="btn" id="yellow_btn" value="ボタン3" onclick="Change('therd')"/>
+                <div id="message1">farst</div>
+                <div id="message2">second</div>
+                <div id="message3">therd</div>
+            </div>
+        </form>
+        <script>
+            /**
+             * メッセージの表示・非表示を切り替え
+             * @param {string} mode 表示(disp)または非表示(hide)を指定する
+             */
+             function ChangeDisp(mode)
+             {
+               // 表示モードの場合は、ID：messageの要素を表示状態とする
+               if (mode =="disp")
+               {
+                 document.getElementById("message").style.display="block";
+               }
+               // 非表示モードの場合は、ID：messageの要素を非表示状態とする
+               else
+               {
+                 document.getElementById("message").style.display="none";
+               }
+             }
+        </script>
+        <form>
+            <input type="button" value="メッセージ表示" onclick="ChangeDisp('disp')">
+            <input type="button" value="メッセージ非表示" onclick="ChangeDisp('hide')">
+            <div id="message">test</div>
+        </form>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="fa (1).png" width="500" height="350" alt=""></div>
+            <div class="swiper-slide"><img src="fa (2).png" width="500" height="350" alt=""></div>
+            <div class="swiper-slide"><img src="fa (3).png" width="500" height="350" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+             effect: "slide",
+            loop: true,
+            autoplay: 5000,
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            })
+        </script>
+        <a href="fa (1).png" data-lightbox="abc" width="500" height="350" data-title="写真拡大">
+            <img src="fa (1).png" width="500" height="350" alt="サンプル写真">
+        </a>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+        type="text/javascript"></script>
+    </body>
+</html>

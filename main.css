@@ -1,0 +1,26 @@
+h2 { 
+    background: #c2edff;                /*背景色*/
+    padding:5px;                        /*文字の余白*/
+}
+ 
+h3 {
+    padding: 3px 6px;                   /*上下左右の余白*/
+    color: #494949;                     /*文字色*/
+    background: transparent;            /*背景を透明に変更*/
+    border-left: solid 5px #7db4e6;     /*左に色指定で枠線追加*/
+}
+
+.btn {
+    padding: 4px 8px;       /*余白を設定*/
+    color: rgb(0, 0, 0);            /*文字の色*/
+    border-radius: 3px;     /*角を丸める*/
+}
+#blue_btn {
+    background: #8cfffa;    /*ボタン色を設定*/
+}
+#pink_btn {
+    background: #feaec7;    /*ボタン色を設定*/
+}
+#yellow_btn {
+    background: #fdeca6;    /*ボタン色を設定*/
+}
