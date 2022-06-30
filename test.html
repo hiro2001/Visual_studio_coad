@@ -60,6 +60,11 @@
                     document.getElementById("message1").style.display="block";
                     document.getElementById("message2").style.display="none";
                     document.getElementById("message3").style.display="none";
+                    var myInt = 5;
+                    var myFloat = 6.667;
+                    myInt;
+                    myFloat;
+                    
                 }
                 // 非表示モードの場合は、ID：messageの要素を非表示状態とする
                 else if(mode == "second"){
@@ -141,6 +146,16 @@
         </a>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
-        type="text/javascript"></script>
+        type="text/javascript">
+        </script>
+        <p>output要素は、JavaScriptでform要素の内容を処理してその結果を表示するのに便利な要素です。</p>
+
+        <form
+            onsubmit="return"
+            oninput="this.result.value = this.left.valueAsNumber + this.right.valueAsNumber">
+            <input type="number" name="left" value="1"> +
+            <input type="number" name="right" value="1"> =
+            <output name="result">2</output>
+        </form>
     </body>
 </html>
