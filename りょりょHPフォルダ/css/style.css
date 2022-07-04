@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+/*keyframes.cssの読み込み
+---------------------------------------------------------------------------*/
+@import url("keyframes.css");
 
 /*メニューで使うGoogle Fontsの読み込み
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -31,6 +33,7 @@ img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
 
+body.bg2 {background-image: url(../images/bg.jpg);}
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {
@@ -42,6 +45,13 @@ a:hover {
 	color: #ccc;			/*マウスオン時の文字色*/
 	text-decoration: none;	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
 }
+
+/*コンテナー（サイト全体を囲むブロック）
+---------------------------------------------------------------------------*/
+#container {
+	padding: 3%;	/*ブロック内の余白*/
+}
+
 
 /*トップページのボックス
 ---------------------------------------------------------------------------*/
@@ -62,13 +72,17 @@ a:hover {
 /*ヘッダー（ロゴが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
 /*ロゴ画像*/
-header #logo {
-	width: 300px;	/*ロゴ画像の幅*/
+/*header #logo {
+	width: 300px;
 	float: left;
-}
+}*/
 /*ロゴ画像（※トップページ用の追加設定）*/
-#top header #logo {
+/*#top header #logo {
 	width: 500px;	/*ロゴ画像の幅*/
+/*}*/
+#logo img {
+	width: 400px;	/*画像幅*/
+	padding-top: 0px;	/*画像の上にあける余白*/
 }
 
 /*メインメニュー（※トップページ以外）
@@ -76,7 +90,8 @@ header #logo {
 /*メニューブロック*/
 #menubar {
 	text-align: center;	/*文字をセンタリング*/
-	font-size: 12px;	/*文字サイズ*/
+	font-size: 10px;	/*文字サイズ*/
+	color: rgb(122, 122, 122);
 	padding-top: 60px;	/*ボックス内、上側に空ける余白*/
 }
 /*メニュー１個あたりの設定*/
@@ -86,6 +101,7 @@ header #logo {
 }
 #menubar li a {
 	text-decoration: none;
+	color: rgb(122, 122, 122);
 	display: block;
 }
 /*英語表記*/
@@ -398,7 +414,7 @@ footer .pr {
 #copyright {
 	clear: both;
 	text-align: center;
-	background: #555;	/*背景色*/
+	background: rgb(175, 175, 175);	/*背景色*/
 	color: #ccc;		/*文字色*/
 }
 #copyright a {
@@ -419,7 +435,7 @@ footer .pr {
 #new dt {
 	float: left;
 	width: 9em;
-	color: #fff;	/*文字色*/
+	color: rgb(41, 41, 41);	/*文字色*/
 	letter-spacing: 0.1em;
 }
 /*記事設定*/
