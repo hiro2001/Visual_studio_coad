@@ -33,7 +33,7 @@ img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
 
-body.bg2 {background-image: url(../images/bg.jpg);}
+body.bg2 {background-image: url(../images/19_2.jpg);}
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {
@@ -91,7 +91,7 @@ a:hover {
 #menubar {
 	text-align: center;	/*文字をセンタリング*/
 	font-size: 10px;	/*文字サイズ*/
-	color: rgb(122, 122, 122);
+	color: rgb(107, 107, 107);
 	padding-top: 60px;	/*ボックス内、上側に空ける余白*/
 }
 /*メニュー１個あたりの設定*/
@@ -101,7 +101,7 @@ a:hover {
 }
 #menubar li a {
 	text-decoration: none;
-	color: rgb(122, 122, 122);
+	color: rgb(100, 99, 99);
 	display: block;
 }
 /*英語表記*/
@@ -112,7 +112,7 @@ a:hover {
 }
 /*現在表示中のメニューの設定*/
 #menubar li.current a {
-	color: #ccc;	/*文字色*/
+	color: rgb(221, 165, 165);	/*文字色*/
 }
 
 /*トップページのメニューブロック
