@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 /*keyframes.cssの読み込み
 ---------------------------------------------------------------------------*/
@@ -15,16 +17,29 @@ html, body {height: 100%;width: 100%;overflow: hidden;}
 body {
 	margin: 0px;
 	padding: 0px;
-	color: #666;	/*全体の文字色*/
+	color: rgb(51, 51, 51);	/*全体の文字色*/
 	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
-	font-size: 16px;	/*文字サイズ*/
+	font-size: 25px;
 	line-height: 2;		/*行間*/
-	background: #fff;	/*背景色*/
+	background: rgb(255, 255, 255);	/*背景色*/
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,textarea,input {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
 ul {list-style-type: none;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 a {text-decoration: none;color: #666;transition: 0.5s;}
+
+/*トップページのNEWアイコン
+---------------------------------------------------------------------------*/
+.newicon {
+	background: #F00;	/*背景色*/
+	color: #FFF;		/*文字色*/
+	font-size: 70%;
+	line-height: 1.5;
+	padding: 2px 5px;
+	border-radius: 2px;
+	margin: 0px 5px;
+	vertical-align: text-top;
+}
 
 /*スライドショー
 ---------------------------------------------------------------------------*/
@@ -38,6 +53,7 @@ a {text-decoration: none;color: #666;transition: 0.5s;}
 	height: 100%;
 	z-index: -1;
 }
+
 /*画像の共通設定*/
 .slide0,.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9,.slide10 {width: 100%;height: 100%;}
 .slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9,.slide10 {
@@ -103,7 +119,7 @@ header {
 	animation-name: opa1;	/*keyframes.cssで使う@keyframesの指定*/
 	animation-fill-mode: both;
 	animation-duration: 1.5S;	/*アニメーションを実行する時間。「s」は秒の事。*/
-	animation-delay: 4s;		/*出現するタイミング（秒後）*/
+	animation-delay: 2s;		/*出現するタイミング（秒後）*/
 	position: absolute;
 	left: 2%;		/*左からの配置場所指定*/
 	bottom: 4%;		/*下からの配置場所指定*/
@@ -131,12 +147,14 @@ header #logo img {
 #new dt {
 	float: left;
 	width: 8em;		/*幅*/
-	color: #4d91f6;	/*文字色*/
+	font-size: 20px;	/*文字サイズ*/
+	color: #30425f;	/*文字色*/
 	letter-spacing: 0.1em;
 }
 /*記事設定*/
 #new dd {
 	padding-left: 8em;
+	font-size: 20px;	/*文字サイズ*/
 }
 
 /*メインメニュー
@@ -156,14 +174,20 @@ header #logo img {
 	animation-duration: 4S;					/*アニメーションを実行する時間。「s」は秒の事。*/
 	animation-iteration-count: infinite;	/*実行する回数。「infinite」は無限に繰り返す意味。*/
 	animation-timing-function: linear;		/*アニメーションのパターン。速度を一定に変化させる指定。*/
-	color: #fff;	/*文字色*/
+	color: rgb(70, 70, 70);	/*文字色*/
 	text-align: center;	/*文字をセンタリング*/
 	width: 250px;		/*メニューの幅*/
 	line-height: 250px;	/*メニューの高さ*/
 }
 
 /*１つ目のspanタグ（英語）への設定。通常時とマウスオン時で表示を切り替える設定です。*/
-#menubar li span:first-child {display: block;}
+#menubar li span:first-child {
+	display: block;
+	/*font-family: 'Sacramento', cursive;*/
+	font-family: 'Itim', cursive;
+	font-size: 50px;	/*文字サイズ*/
+}
+
 #menubar li:hover span:first-child {display: none;}
 
 /*２つ目のspanタグ（日本語）への設定。通常時とマウスオン時で表示を切り替える設定です。*/
@@ -172,41 +196,41 @@ header #logo img {
 
 /*１つ目メニューへの追加設定*/
 #menubar li:nth-of-type(1) {
-	animation-delay: 4s;	/*出現するタイミング（秒後）*/
+	animation-delay: 1s;	/*出現するタイミング（秒後）*/
 	left: 1%;	/*左からの配置場所指定*/
 	top: -1%;	/*上からの配置場所指定*/
 }
 #menubar li:nth-of-type(1) a {
-	background: url(../images/menu1.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
+	background: url(../images/menu5.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
 }
 /*２つ目メニューへの追加設定*/
 #menubar li:nth-of-type(2) {
-	animation-delay: 4.2s;	/*出現するタイミング（秒後）*/
+	animation-delay: 1.2s;	/*出現するタイミング（秒後）*/
 	left: 25%;	/*左からの配置場所指定*/
 	top: 15%;	/*上からの配置場所指定*/
 }
 #menubar li:nth-of-type(2) a {
-	background: url(../images/menu2.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
+	background: url(../images/menu5.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
 	animation-delay: 1s;	/*１個ずつメニューをずらしてスイングさせる為の指定*/
 }
 /*３つ目メニューへの追加設定*/
 #menubar li:nth-of-type(3) {
-	animation-delay: 4.4s;	/*出現するタイミング（秒後）*/
+	animation-delay: 1.4s;	/*出現するタイミング（秒後）*/
 	right: 27%;	/*右からの配置場所指定*/
 	top: 5%;	/*上からの配置場所指定*/
 }
 #menubar li:nth-of-type(3) a {
-	background: url(../images/menu3.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
+	background: url(../images/menu5.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
 	animation-delay: 2s;	/*１個ずつメニューをずらしてスイングさせる為の指定*/
 }
 /*４つ目メニューへの追加設定*/
 #menubar li:nth-of-type(4) {
-	animation-delay: 4.6s;	/*出現するタイミング（秒後）*/
+	animation-delay: 1.6s;	/*出現するタイミング（秒後）*/
 	right: 1%;	/*右からの配置場所指定*/
 	top: -4%;	/*上からの配置場所指定*/
 }
 #menubar li:nth-of-type(4) a {
-	background: url(../images/menu4.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
+	background: url(../images/menu5.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
 	animation-delay: 3s;	/*１個ずつメニューをずらしてスイングさせる為の指定*/
 }
 
@@ -259,6 +283,25 @@ header #logo img {
 #menubar li a:hover {
 	width: 203px;	/*マウスオン時にちょっとだけ大きくする。通常サイズは上の「#menubar li a」で指定しています。*/
 }
+#menubar li span:first-child {
+	display: block;
+	/*font-family: 'Sacramento', cursive;*/
+	font-family: 'Itim', cursive;
+	font-size: 30px;	/*文字サイズ*/
+}
+/*日付設定*/
+#new dt {
+	float: left;
+	width: 8em;		/*幅*/
+	font-size: 15px;	/*文字サイズ*/
+	color: #30425f;	/*文字色*/
+	letter-spacing: 0.1em;
+}
+/*記事設定*/
+#new dd {
+	padding-left: 8em;
+	font-size: 15px;	/*文字サイズ*/
+}
 
 }
 
@@ -296,6 +339,19 @@ header #logo img {
 footer .pr {
 	display: block;
 }
+/*日付設定*/
+#new dt {
+	float: left;
+	width: 8em;		/*幅*/
+	font-size: 15px;	/*文字サイズ*/
+	color: #30425f;	/*文字色*/
+	letter-spacing: 0.1em;
+}
+/*記事設定*/
+#new dd {
+	padding-left: 8em;
+	font-size: 15px;	/*文字サイズ*/
+}
 
 }
 
@@ -317,6 +373,19 @@ footer .pr {
 #menubar li a {
 	width: 150px;	/*幅*/
 	line-height: 150px;	/*高さ*/
+}
+/*日付設定*/
+#new dt {
+	float: left;
+	width: 8em;		/*幅*/
+	font-size: 12px;	/*文字サイズ*/
+	color: #30425f;	/*文字色*/
+	letter-spacing: 0.1em;
+}
+/*記事設定*/
+#new dd {
+	padding-left: 8em;
+	font-size: 12px;	/*文字サイズ*/
 }
 
 }
