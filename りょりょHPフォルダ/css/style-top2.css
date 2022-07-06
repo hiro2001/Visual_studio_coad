@@ -8,40 +8,6 @@
 @import url("keyframes.css");
 
 
-/*全端末（PC・タブレット・スマホ）共通設定
-------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*全体の設定
----------------------------------------------------------------------------*/
-html {height: 100%;width: 100%;}
-body {height: 100%;width: 100%;overflow: hidden;}
-body {
-	margin: 0px;
-	padding: 0px;
-	color: rgb(51, 51, 51);	/*全体の文字色*/
-	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
-	font-size: 25px;
-	line-height: 2;		/*行間*/
-	background: rgb(255, 255, 255);	/*背景色*/
-}
-h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,textarea,input {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
-ul {list-style-type: none;}
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
-a {text-decoration: none;color: #666;transition: 0.5s;}
-
-/*トップページのNEWアイコン
----------------------------------------------------------------------------*/
-.newicon {
-	background: #F00;	/*背景色*/
-	color: #FFF;		/*文字色*/
-	font-size: 70%;
-	line-height: 1.5;
-	padding: 2px 5px;
-	border-radius: 2px;
-	margin: 0px 5px;
-	vertical-align: text-top;
-}
-
 /*スライドショー
 ---------------------------------------------------------------------------*/
 /*画像ブロック*/
@@ -56,8 +22,8 @@ a {text-decoration: none;color: #666;transition: 0.5s;}
 }
 
 /*画像の共通設定*/
-.slide0,.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9,.slide10 {width: 100%;height: 100%;}
-.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9,.slide10 {
+.slide0,.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9,.slide10,.slide11,.slide12 {width: 100%;height: 100%;}
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,.slide9,.slide10,.slide11,.slide12 {
 	animation-timing-function: linear;
 	animation-duration: 80s;	/*実行する時間。「s」は秒の事。*/
 	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
@@ -66,22 +32,22 @@ a {text-decoration: none;color: #666;transition: 0.5s;}
 }
 /*土台画像*/
 .slide0 {
-	background: url(../images/0.jpg) no-repeat center center / cover;	/*土台画像（空）の読み込み*/
+	background: url(../images/0.jpg) no-repeat center center / cover;
 	position: relative;
 }
 /*１枚目*/
 .slide1 {
-	background: url(../images/1_3.jpg) no-repeat center bottom/cover;	/*１枚目画像（子供たち）の読み込み*/
+	background: url(../images/1_3.jpg) no-repeat center bottom/cover;
 	animation-name: slide1;		/*keyframes.cssで使う@keyframesの指定*/
 }
 /*２枚目*/
 .slide2 {
-	background: url(../images/2_3.jpg) no-repeat center center/cover;	/*２枚目画像（サッカー）の読み込み*/
+	background: url(../images/2_3.jpg) no-repeat center center/cover;	
 	animation-name: slide2;		/*keyframes.cssで使う@keyframesの指定*/
 }
 /*３枚目*/
 .slide3 {
-	background: url(../images/3_2.jpg) no-repeat center top/cover;	/*３枚目画像（スイミング）の読み込み*/
+	background: url(../images/3_2.jpg) no-repeat center top/cover;
 	animation-name: slide3;		/*keyframes.cssで使う@keyframesの指定*/
 }
 .slide4 {
@@ -109,8 +75,16 @@ a {text-decoration: none;color: #666;transition: 0.5s;}
 	animation-name: slide9;		/*keyframes.cssで使う@keyframesの指定*/
 }
 .slide10 {
-	background: url(../images/10.jpg) no-repeat center top/cover;
+	background: url(../images/29_3.jpg) no-repeat center top/cover;
 	animation-name: slide10;		/*keyframes.cssで使う@keyframesの指定*/
+}
+.slide11 {
+	background: url(../images/22.jpg) no-repeat center top/cover;
+	animation-name: slide11;		/*keyframes.cssで使う@keyframesの指定*/
+}
+.slide12 {
+	background: url(../images/10.jpg) no-repeat center top/cover;
+	animation-name: slide12;		/*keyframes.cssで使う@keyframesの指定*/
 }
 
 /*ヘッダー（ロゴとお知らせが入ったブロック）
@@ -176,6 +150,8 @@ header #logo img {
 	animation-iteration-count: infinite;	/*実行する回数。「infinite」は無限に繰り返す意味。*/
 	animation-timing-function: linear;		/*アニメーションのパターン。速度を一定に変化させる指定。*/
 	color: rgb(70, 70, 70);	/*文字色*/
+	font-family: "M PLUS Rounded 1c";
+	font-size: 25px;
 	text-align: center;	/*文字をセンタリング*/
 	width: 250px;		/*メニューの幅*/
 	line-height: 250px;	/*メニューの高さ*/
@@ -243,19 +219,6 @@ header #logo img {
 #menubar li:hover {
 	opacity: 1;	/*色を100%出す*/
 }
-
-/*フッター設定（copyrightなど）
----------------------------------------------------------------------------*/
-footer {
-	position: absolute;
-	right: 0px;			/*右からの配置場所指定*/
-	bottom: 0px;		/*下からの配置場所指定*/
-	width: 100%;
-	text-align: center;	/*センタリング*/
-	font-size: 10px;	/*文字サイズ*/
-}
-
-
 
 /*画面幅900px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/

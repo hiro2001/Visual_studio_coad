@@ -10,7 +10,7 @@ $('.slider').slick({
       {
       breakpoint: 769,//モニターの横幅が769px以下の見せ方
       settings: {
-        slidesToShow: 4,//スライドを画面に2枚見せる
+        slidesToShow: 3,//スライドを画面に2枚見せる
         slidesToScroll: 1,//1回のスクロールで2枚の写真を移動して見せる
       }
     },

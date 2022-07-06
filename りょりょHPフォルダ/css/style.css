@@ -101,7 +101,7 @@ a:hover {
 }
 #menubar li a {
 	text-decoration: none;
-	color: rgb(100, 99, 99);
+	color: rgb(102, 211, 211);
 	display: block;
 }
 /*英語表記*/
@@ -112,7 +112,7 @@ a:hover {
 }
 /*現在表示中のメニューの設定*/
 #menubar li.current a {
-	color: rgb(221, 165, 165);	/*文字色*/
+	color: rgb(255, 190, 137);	/*文字色*/
 }
 
 /*トップページのメニューブロック
@@ -567,8 +567,10 @@ img.fl {float: left;margin-right: 10px;margin-bottom: 10px;}
 }
 #menubar-s li a {
 	display: block;
+	color: rgb(20, 20, 20);
 	text-decoration: none;
 	text-align: center;	/*文字をセンタリング*/
+	font-family: "M PLUS Rounded 1c";
 	padding: 15px 0;	/*上下、左右へのメニュー内の余白*/
 	border-bottom: 1px solid #999;	/*下線の幅、線種、色*/
 	border-right: 1px solid #999;	/*右線の幅、線種、色*/
