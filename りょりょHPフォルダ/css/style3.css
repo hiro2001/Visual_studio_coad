@@ -127,20 +127,20 @@ main h2 {
 /*ブロック内のh2タグ内のspanタグ（日本語の小さい説明用部分）*/
 main h2 span {
 	display: block;	
-	font-size: 0.7rem;			/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	font-size: 2rem;			/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
 	letter-spacing: 0.2em;		/*文字間隔を少し広くとる指定*/
 }
 
 /*spanタグの前に「〜」を出力する指定*/
 main h2 span::before {
 	content: "〜";
-	padding-right: 10px;
+	padding-right: 40px;
 }
 
 /*spanタグの後に「〜」を出力する指定*/
 main h2 span::after {
 	content: "〜";
-	padding-left: 10px;
+	padding-left: 40px;
 }
 
 /*ブロック内のh3タグ*/

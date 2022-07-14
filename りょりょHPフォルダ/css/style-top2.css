@@ -191,7 +191,7 @@ header #logo img {
 }
 /*３つ目メニューへの追加設定*/
 #menubar li:nth-of-type(3) {
-	animation-delay: 1.4s;	/*出現するタイミング（秒後）*/
+	animation-delay: 1.2s;	/*出現するタイミング（秒後）*/
 	right: 27%;	/*右からの配置場所指定*/
 	top: 15%;	/*上からの配置場所指定*/
 }
@@ -201,7 +201,7 @@ header #logo img {
 }
 /*４つ目メニューへの追加設定*/
 #menubar li:nth-of-type(4) {
-	animation-delay: 1.6s;	/*出現するタイミング（秒後）*/
+	animation-delay: 1.4s;	/*出現するタイミング（秒後）*/
 	right: 1%;	/*右からの配置場所指定*/
 	top: 15%;	/*上からの配置場所指定*/
 }
@@ -211,15 +211,24 @@ header #logo img {
 }
 /*5つ目メニューへの追加設定*/
 #menubar li:nth-of-type(5) {
-	animation-delay: 1.8s;	/*出現するタイミング（秒後）*/
-	right: 5%;	/*右からの配置場所指定*/
+	animation-delay: 1.6s;	/*出現するタイミング（秒後）*/
+	right: 30%;	/*右からの配置場所指定*/
 	top: 60%;	/*上からの配置場所指定*/
 }
 #menubar li:nth-of-type(5) a {
 	background: url(../images/menu6.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
 	animation-delay: 4s;	/*１個ずつメニューをずらしてスイングさせる為の指定*/
 }
-
+/*6つ目メニューへの追加設定*/
+#menubar li:nth-of-type(6) {
+	animation-delay: 1.8s;	/*出現するタイミング（秒後）*/
+	right: 5%;	/*右からの配置場所指定*/
+	top: 60%;	/*上からの配置場所指定*/
+}
+#menubar li:nth-of-type(6) a {
+	background: url(../images/menu6.png) no-repeat center center / contain;	/*メニュー背景画像の読み込み*/
+	animation-delay: 4s;	/*１個ずつメニューをずらしてスイングさせる為の指定*/
+}
 
 /*マウスオン時*/
 #menubar li a:hover {
